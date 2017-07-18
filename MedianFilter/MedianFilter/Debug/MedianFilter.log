@@ -1,0 +1,43 @@
+﻿Build started 7/17/2017 5:13:12 PM.
+     1>Project "C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\MedianFilter\MedianFilter.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c C:\Users\rd547\Pictures\CUDA-Median-Filtering-master\CUDA-Median-Filtering-master\lab05\GPU.cu 
+       CudaBuild:
+         Compiling CUDA source file ..\..\..\..\..\Pictures\CUDA-Median-Filtering-master\CUDA-Median-Filtering-master\lab05\GPU.cu...
+         cmd.exe /C "C:\Users\rd547\AppData\Local\Temp\tmp6eca62c5f7eb4b51b70f102987f31aef.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\GPU.cu.obj "C:\Users\rd547\Pictures\CUDA-Median-Filtering-master\CUDA-Median-Filtering-master\lab05\GPU.cu"
+         
+         C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\MedianFilter>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\GPU.cu.obj "C:\Users\rd547\Pictures\CUDA-Median-Filtering-master\CUDA-Median-Filtering-master\lab05\GPU.cu" 
+         GPU.cu
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\..\..\..\Pictures\CUDA-Median-Filtering-master\CUDA-Median-Filtering-master\lab05\CPU.cpp" "..\..\..\..\..\Pictures\CUDA-Median-Filtering-master\CUDA-Median-Filtering-master\lab05\main.cpp"
+         main.cpp
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(37): warning C4244: 'initializing' : conversion from 'clock_t' to 'float', possible loss of data
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(41): warning C4244: 'initializing' : conversion from 'clock_t' to 'float', possible loss of data
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(51): warning C4244: 'initializing' : conversion from 'clock_t' to 'float', possible loss of data
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(55): warning C4244: 'initializing' : conversion from 'clock_t' to 'float', possible loss of data
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(77): warning C4244: 'initializing' : conversion from 'clock_t' to 'float', possible loss of data
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(81): warning C4244: 'initializing' : conversion from 'clock_t' to 'float', possible loss of data
+     1>c:\users\rd547\pictures\cuda-median-filtering-master\cuda-median-filtering-master\lab05\main.cpp(102): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(911) : see declaration of '_sleep'
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         CPU.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\MedianFilter.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\MedianFilter.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\MedianFilter.lib" /MACHINE:X86 Debug\GPU.cu.obj
+         Debug\CPU.obj
+         Debug\main.obj
+         MedianFilter.vcxproj -> C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\MedianFilter.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "C:\Users\rd547\Documents\Visual Studio 2013\Projects\MedianFilter\MedianFilter\MedianFilter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.54
